@@ -1,0 +1,83 @@
+#  Write program to find BMI using height and weight
+
+weight=float(input())
+height=float(input())
+BMI= weight/(height*height)
+print(f"The Body mass index is: {BMI:.2f}")
+
+# write a program to calculate Simple Intrest
+
+principal= float(input())
+rate= float(input())
+time= float(input())
+intrest=(principal*rate*time)/100
+print(f"Simple Intrest: {intrest:.2f}")
+
+# Write a program to find area of circle
+
+import math
+radius = float(input())
+area = math.pi*(radius*radius)
+print(area)
+
+# Write a program to find acceleration using distance and time
+
+distance=float(input())
+time=float(input())
+acceleration=(2*distance)/(time ** 2)
+print(f"Acceleration is: {acceleration:.2f} m/s^2")
+
+# Write a program to find velocity using mass and force
+
+force=float(input())
+mass=float(input())
+velocity=force/mass
+print(f"Velocity is: {velocity:.2f}m/s")
+
+# Write a program to print '*' pyramid pattern
+a=int(input())
+for i in range(a):
+    print(' ' * (a-i-1)+ "*" * (2*i-1))
+
+# write a program to convert kms to miles
+ 
+kilometer = int(input())
+miles = kilometer * 0.621
+print(f"{kilometer}km is equal to {miles} miles")
+
+# Write a program to find joules
+
+mass = float(input())
+height = float(input())
+gravity = 9.8
+joule = mass * gravity * height
+print(f"Energy is equal to {joule} joule")
+
+# write a program to find Joules
+
+mass = float(input())
+height = float(input())
+gravity = 9.8
+joule = mass * gravity * height
+print(f"Energy is equal to {joule} joule")
+
+#  write a program to find the difference between two points using Euler's formula
+
+import math
+
+x1 = float(input("Enter x1: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(f"The distance between two points is {distance:.2f}")
+
+# write a program to convert integer into dollars,quaters,cents and pennies.
+
+integer = int(input())
+dollars= integer//100
+quaters=(integer % 100)//25
+cent=integer*100
+pennies=integer%5
+print(f"{dollars} dollars, {quaters} quaters, {cent} cents , {pennies} pennies")
+
